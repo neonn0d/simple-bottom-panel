@@ -1,0 +1,46 @@
+/***** Common *****/
+
+.simple-bottom-panel .dash-item-container .overview-tile .app-grid-running-dot {
+    width: 24px;
+    height: 3px;
+}
+
+.simple-bottom-panel .overview-icon {
+    background-color: transparent;
+}
+
+/***** Panel mode *****/
+
+.simple-bottom-panel-panel-mode #dash {
+    padding: 0;
+}
+
+.simple-bottom-panel-panel-mode #dash .dash-background {
+    border-radius: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 4px;
+}
+
+.simple-bottom-panel-panel-mode .dash-item-container .overview-tile .app-grid-running-dot {
+    margin-bottom: 0;
+    offset-y: -2px;
+}
+
+.simple-bottom-panel-panel-mode .dash-item-container .overview-tile,
+.simple-bottom-panel-panel-mode #dash .dash-item-container .app-well-app,
+.simple-bottom-panel-panel-mode #dash .dash-item-container .show-apps,
+.simple-bottom-panel-panel-mode .dash-separator {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+/***** Custom: subtle hover effect on dock icons *****/
+.simple-bottom-panel .dash-item-container .overview-tile:hover .overview-icon,
+.simple-bottom-panel .dash-item-container .show-apps:hover .overview-icon {
+    background-color: rgba(255, 255, 255, 0.20);
+    border-radius: 9px;
+    transition-duration: 150ms;
+}

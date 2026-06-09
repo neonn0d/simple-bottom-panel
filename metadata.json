@@ -1,0 +1,14 @@
+{
+  "name": "Simple Bottom Panel",
+  "description": "A clean, solid bottom panel for GNOME. Always-on, full-width, reserves its space. Click an app icon to show or minimize it, show-apps button on the left, subtle hover, customizable panel color. No dock tricks, no clutter.",
+  "uuid": "simple-bottom-panel@neonn0d",
+  "settings-schema": "org.gnome.shell.extensions.simple-bottom-panel",
+  "shell-version": [
+    "46",
+    "47",
+    "48",
+    "49",
+    "50"
+  ],
+  "version": 1
+}
