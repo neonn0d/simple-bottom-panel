@@ -9,6 +9,11 @@
             <summary>Bottom panel on all monitors</summary>
         </key>
 
+        <key type="i" name="monitor-index">
+            <default>-1</default>
+            <summary>Monitor to show the panel on (-1 = primary)</summary>
+        </key>
+
         <key type="b" name="toggle-panel">
             <default>true</default>
             <summary>Bottom pressure to toggle bottom panel</summary>

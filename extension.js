@@ -332,10 +332,17 @@ const BottomDashPanel = GObject.registerClass(
                 this._dashList = [];
 
                 const monitors = Main.layoutManager.monitors;
-                if (this._settings?.get_boolean('multi-monitor'))
+                if (this._settings?.get_boolean('multi-monitor')) {
                     monitors?.forEach(monitor => this._initDash(monitor));
-                else
-                    this._initDash(Main.layoutManager.primaryMonitor);
+                } else {
+                    // Pin to the chosen monitor by index (stable across restarts);
+                    // -1 or an invalid index falls back to the primary monitor.
+                    const idx = this._settings?.get_int('monitor-index') ?? -1;
+                    const monitor = (idx >= 0 && monitors && monitors[idx])
+                        ? monitors[idx]
+                        : Main.layoutManager.primaryMonitor;
+                    this._initDash(monitor);
+                }
 
                 this._refreshTimeout = null;
                 return GLib.SOURCE_REMOVE;
