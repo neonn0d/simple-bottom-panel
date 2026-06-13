@@ -14,7 +14,7 @@ Fork of [Bottom Dash Panel](https://github.com/fthx/bottom-dash-panel) by @fthx.
 - Show-apps button on the left
 - Subtle hover highlight
 - Configurable panel color
-- Optional: show on all monitors
+- Choose which monitor it lives on (all monitors, primary, or a specific screen)
 
 ## Install
 
